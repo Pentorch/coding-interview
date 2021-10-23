@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Story</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="data">
+            <center>
+                <h1>Total</h1>
+            </center>
+          <p id="cetak"></p>
+        <p id="data-school">
+        </p>
+        <p id="data-major"></p>
+        <p id="data-summary"></p>
+        <div class="tlpn" id="data-phone">
+          <span class="text"></span>
+        </div>
+        <div class="email" id="data-email">
+          <span class="text"></span>
+        </div>
+        <div class="location" id="data-address">
+          <span class="text">
+          </span>
+        </div>
+      </div>
+      <div class="section-global">
+        <div class="card">
+            <h3>Input Your Data</h3>
+            
+                <label for="name">Nama Resto : </label>  
+                  <input type="text" name="nama" id="nama" onchange="total()">
+                  <label for="date">Tanggal : </label>  
+                  <input type="date" name="date" id="tanggal" onchange="total()">
+                <label for="kasir">Name Kasir : </label>
+                  <input type="text" name="kasir" id="kasir" onchange="total()">
+                  <label for="menu">Menu :</label>
+              <select id="menu" onchange="total()">
+                <option value="Nasi">Nasi</option>
+                <option value="Lauk">Lauk</option>
+                <option value="Minuman">Minum</option>
+            </select>
+                <label for="harga">Harga : </label>  
+                  <input type="number" name="harga" id="harga" onchange="total()">
+                <label for="jumlah">Jumlah Barang : </label>  
+                    <input type="text" name="jumlah" id="jumlah" onchange="total()">
+                <label for="jumlah">Total Barang : </label>  
+                    <input type="text" name="total" id="total" disabled>
+                <label for="jumlah">Total Pembayaran : </label>  
+                    <input type="number" id="bayar" onchange="total()">
+                <label for="jumlah">Kembalian : </label>  
+                    <input type="text" name="total1" id="total1" disabled>
+
+              
+            <div class="submit">
+                <button id="total" onclick="window.print()">Cetak</button>
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
