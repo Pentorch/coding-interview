@@ -23,4 +23,4 @@ function test_LeapYear(year) {
   }
 }
 
-console.log(leap_year_range(1900, 2000));
+console.log(leap_year_range(1900, 2020));
